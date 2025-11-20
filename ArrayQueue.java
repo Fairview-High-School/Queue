@@ -1,4 +1,4 @@
-public class ArrayQueue<E>
+public class ArrayQueue<E> implements Queue<E>
 {
     
     

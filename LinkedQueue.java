@@ -1,4 +1,4 @@
-public class LinkedQueue<E>
+public class LinkedQueue<E> implements Queue<E>
 {
     
     
