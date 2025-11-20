@@ -1,28 +1,34 @@
 {
   "name": "IterationAlgorithms Java Workspace",
-  "image": "mcr.microsoft.com/devcontainers/java:11",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+
   "extensions": [
-    "vscjava.vscode-java-pack",
-    "vscjava.vscode-maven"
+    "vscjava.vscode-java-pack"
   ],
-  "features": {
-    "maven": "latest"
-  },
-  "postCreateCommand": "mvn clean compile",
+
   "settings": {
-    "java.home": "/usr/local/openjdk-11",
-    "java.configuration.runtimes": [
-      {
-        "name": "JavaSE-11",
-        "path": "/usr/local/openjdk-11"
-      }
-    ],
-    "java.configuration.updateBuildConfiguration": "automatic",
+    "github.copilot.enable": false,
+    "github.copilot.advanced": {
+      "inlineSuggest.enable": false
+    },
+
+    "github.copilot.chat.enable": false,
+
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.preview": false,
+
+    "editor.experimental.inlineSuggest.enable": false,
+    "workbench.experimental.editSessions.autoContinue": false,
+
+    "workbench.startupEditor": "none",
+    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+
+    // --- Java settings ---
+    "java.configuration.updateBuildConfiguration": "interactive",
     "java.configuration.serverMode": "Standard",
     "java.configuration.checkProjectSettingsExclusions": false,
-    "java.debug.settings.hotCodeReplace": "auto",
-    "github.copilot.enable": false,
-    "github.copilot.experimental.suggestJavaUpgrade": false
+    "java.debug.settings.hotCodeReplace": "auto"
   },
+
   "remoteUser": "vscode"
 }
