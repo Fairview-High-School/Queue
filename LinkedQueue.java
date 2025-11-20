@@ -1,3 +1,35 @@
+class LinkedNode<E> //internal class for Linked nodes
+{
+    public E value;
+    public LinkedNode<E> next;
+
+    public LinkedNode(E val)
+    {
+        this.value = val;
+        this.next = null;
+    }
+
+    public void setValue(E val)
+    {
+        this.value = val;
+    }
+    public E getValue()
+    {
+        return value;
+    }
+
+    public void setNext(LinkedNode next)
+    {
+        this.next = next;
+    }
+
+    public LinkedNode getNext()
+    {
+        return next;
+    }
+}
+
+
 public class LinkedQueue<E> implements Queue<E>
 {
     
