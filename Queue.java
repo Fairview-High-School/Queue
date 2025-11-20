@@ -4,8 +4,8 @@ public interface Queue<E>
     //that operation for that data structure.
     boolean isEmpty( ); //returns true if nothing in the queue
     void enqueue(E obj ); //places object obj at the back of the queue
-    E dequeue( ); //removes and returns object at front of the list
-    E peekFront( ); //returns object at the front of the list
+    E dequeue( ); //removes and returns object at front of the queue
+    E peekFront( ); //returns object at the front of the queue
     int size(); //returns the number of elements in the queue
     void clear(); //clears all elements from the Queue.  Results in an empty queue.
 }
