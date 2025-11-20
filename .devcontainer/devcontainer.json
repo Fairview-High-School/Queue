@@ -1,0 +1,28 @@
+{
+  "name": "IterationAlgorithms Java Workspace",
+  "image": "mcr.microsoft.com/devcontainers/java:11",
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "vscjava.vscode-maven"
+  ],
+  "features": {
+    "maven": "latest"
+  },
+  "postCreateCommand": "mvn clean compile",
+  "settings": {
+    "java.home": "/usr/local/openjdk-11",
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-11",
+        "path": "/usr/local/openjdk-11"
+      }
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.configuration.serverMode": "Standard",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "java.debug.settings.hotCodeReplace": "auto",
+    "github.copilot.enable": false,
+    "github.copilot.experimental.suggestJavaUpgrade": false
+  },
+  "remoteUser": "vscode"
+}
