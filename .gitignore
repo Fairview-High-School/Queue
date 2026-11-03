@@ -1,3 +1,9 @@
+# IntelliJ: share the project setup, but not each student's personal workspace
+out/
+.idea/workspace.xml
+.idea/shelf/
+.idea/usage.statistics.xml
+
 # Compiled class file
 *.class
 
